@@ -6,7 +6,7 @@ from django.urls import reverse
 
 class Post(models.Model):
     # These are the columns of the database table
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)  # author is connected to an actual superuser
+    author = models.ForeignKey('auth.User', on_dele=models.CASCADE)  # author is connected to an actual superuser
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now())
