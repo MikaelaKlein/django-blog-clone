@@ -29,10 +29,10 @@
     {% if user.is_authenticated or comment.approved_comment %}
       {{ comment.created_date }}
       {% if not comment.approved_comment %}
-      <a class='btn btn-default btn-sm' href="{% url 'comment_remove' pk=post.pk %}">
+      <a class='btn btn-default btn-sm' href="{% url 'comment_remove' pk=comment.pk %}">
         <span class='glyphicon glyphicon-remove'>Remove</span>
       </a>
-      <a class='btn btn-primary btn-sm' href="{% url 'comment_approve' pk=post.pk %}">
+      <a class='btn btn-primary btn-sm' href="{% url 'comment_approve' pk=comment.pk %}">
         <span class='glyphicon glyphicon-ok'>Approve</span>
       </a>
       {% endif %}
