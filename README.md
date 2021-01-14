@@ -7,9 +7,21 @@ and add comments.
 
 ## Set up
 
-To run the website locally, clone the repo, then run:
+To run the website locally, first clone the repo.
+
+Make sure you have django installed:
 ```bash
-$ cd django-blog-clone/blog
+$ python -m django --version
+```
+
+Otherwise, install django:
+```bash
+$ python -m pip install Django
+```
+
+Start the local server:
+```bash
+$ cd django-blog-clone/blogsite
 $ python manage.py runserver
 ```
 
