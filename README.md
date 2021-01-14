@@ -2,7 +2,8 @@
 
 This is the first of two projects from the [Python and Django Full Stack Web
 Developer Bootcamp](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/)
-course on Udemy.
+course on Udemy. It it a simple blog website that allows you to write new posts
+and add comments.
 
 ## Set up
 
